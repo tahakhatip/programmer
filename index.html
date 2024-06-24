@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkhatib Full Stack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+.social {
+    margin-top: 3.5rem;
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+    animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    animation: typing 8s steps(40, end), blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+
+    .carousel-item img {
+       height: 700px; /* تعيين الطول الثابت للصورة */
+       width: 100%; /* تأكد من أن العرض يأخذ المساحة بالكامل */
+       object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }
+    .card{
+      border-top: 1px solid hsl(64, 93%, 49%);
+    }
+
+    .footer {
+        background-color: #72716c;
+        color: white;
+        padding: 40px 0;
+        border-top: 10px solid hsl(64, 93%, 49%);
+    }
+    .footer a {
+        color: #e7f70e;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        color: #ff0909;
+    }
+    body{
+      background-color: rgb(68, 66, 66);
+    }
+
+    /* أنماط الوضع المظلم */
+    .dark-mode {
+        background-color: #121212;
+        color: #eef114;
+    }
+    .footer {
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+    }
+    .footer a {
+        color: #f6f3fa;
+    }
+   .footer a:hover {
+        color: #fffb03;
+    }
+    .jumbotron,.navbar,.card {
+        background-color: #333;
+        color: #eef114;
+    }
+    
+   
+    .btn-warning:hover {
+        background-color: #ff79c6;
+        border-color: #ff79c6;
+    }
+    .li a {
+     color: #f0ff19;
+    }
+    .list-group a {
+      background-color: #333;
+      color: #e7f70e;
+    }
+    .navbar li a{
+        color: #e7f70e;
+    }
+    body  p{
+        color: #e7f70e;
+    }
+    body h5{
+        color: #e7f70e;
+    }
+    
+   
+</style>
+
+<body >
+    <!-- محتوى الصفحة -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Taha Alkhatib</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Servise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html/#project">Progict</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Abuaot</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Link</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html">front end</a></li>
+                            <li><a class="dropdown-item" href="#">back end</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Full Stack Developer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--============== زر لتبديل الوضع ============-->
+                <button id="toggle-dark-mode" class="btn btn-outline-warning"> Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center m-5">
+        <div class="container m-1">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="jumbotron">
+                        <h1 class="display-4 text-dark bg-warning">Taha Alkhatib</h1>
+                        <p class="lead">Experienced web and app developer skilled in front-end 
+                          and back-end technologies. I create dynamic, responsive websites 
+                          and applications, focused on delivering innovative solutions and continuous improvement.
+
+                        </p>
+                        <hr style="border-top: 3px solid hsl(73, 100%, 54%);">
+
+                        <a href="https://tahakhatip.github.io/khatibcode/" class="btn btn-outline-warning">Download CV</a>
+                        <div class="social">
+                            <a href="https://jo.linkedin.com/in/%D8%B7%D9%87-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8-b96050288?trk=profile-badge"><img src="social_media_linkedin_icon_127334.ico" alt="Whatsapp"></a>
+                            <a href="https://www.instagram.com/khatiptaha/?hl=ar"><img src="instagram_108043.png" alt="Whatsapp"></a>
+                            <a href="https://github.com/tahakhatip"><img src="github_git_icon_145985.ico" alt="Whatsapp"></a>
+                        </div>
+
+
+                        <p>لا تنسى متابعتنا لتلقي احدث العروض.</p>
+                        <form class="d-flex my-2 my-lg-0" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group m-4">
+                        <a data-bs-toggle="collapse" href="#x" class="list-group-item bg-warning">category</a>
+                        <div class="collapse show" id="x">
+                            <a href="#" class="list-group-item">برمجة مواقع الويب</a>
+                            <a href="#" class="list-group-item">برمجة التطبيقات</a>
+                            <a href="#" class="list-group-item">خدمات السوشال ميديا</a>
+                            <a href="#" class="list-group-item">جرافيك ديزاين</a>
+                            <a href="#" class="list-group-item">تصميم الفيديوهات انيميشن</a>
+                            <a href="#" class="list-group-item">خدمة SEO</a>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------=======CARD=========----------------------->
+    <div class="container">
+        <div class="text-center m-5">
+            <h5 id="Progict">مشاريعنا</h5>
+            <P>بعض من اعمالنا في مجال ادرة المشاريع وبرامج المحاسبة ومواقع التواصل الاجتماعي والتطبيقات </P>
+            <hr style="border-top: 3px solid hsl(60, 98%, 51%);">
+            <div class="row">
+                <div class="col-lg-4 p-1 col-md-6 col-12">
+                    <div class="card">
+                        <img src="f.png" class="card-img-top" alt="Card image">
+                        <div class="card-body">
+                            <h5 class="card-title">مشروع تعريفي </h5>
+                            <p class="card-text">مشروع تعريفي متعدد الصفحات لشركات الكبير ة ورجال العمال وجميع التخصصات</p>
+                            <a href="https://tahakhatip.github.io/khatibcode/" class="btn btn-outline-warning">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card">
+                      <img src="f2.png" class="card-img-top" alt="Card image">
+                      <div class="card-body">
+                          <h5 class="card-title">مشروع تعريفي </h5>
+                          <p class="card-text"> مشروع تعريفي لرجال الاعمال وكافة اصحاب المهن والشركات الصغيرة</p>
+                          <a href="https://tahakhatip.github.io/tahacode/" class="btn btn-outline-warning">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                <div class="card">
+                    <img src="moaad2.png" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">مشروع ادارة منتجات</h5>
+                        <p class="card-text">مشروع ادارة مبيعات مع خاصية البحث يحتوي على حساب الضرائب والخصومات  والاصناف </p>
+                        <a href="https://tahakhatip.github.io/moaad/" class="btn btn-outline-warning">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1 col-md-6 col-12">
+              <div class="card">
+                  <img src="tw.png" class="card-img-top" alt="Card image">
+                  <div class="card-body">
+                      <h5 class="card-title">المستودعات</h5>
+                      <p class="card-text">مشاريعنا المسموح برؤيتها مجوعة رائعة من المشاريع الصغيرة والكبيرة</p>
+                      <a href="https://github.com/tahakhatip" class="btn btn-outline-warning">Go somewhere</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 p-1 col-md-6 col-12">
+            <div class="card">
+                <img src="mm.png" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">مشروع محاسبة</h5>
+                    <p class="card-text">مشروع محاسبة لادرارة المنتجات والمستودعات وجرد الارباح ولوحة تحكم  وتحليل البانات</p>
+                    <a href="https://tahakhatip.github.io/almoaad/" class="btn btn-outline-warning">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-1 col-md-6 col-12">
+          <div class="card">
+              <img src="tw.png" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                  <h5 class="card-title">مشروع التواصل الاجتماعي</h5>
+                  <p class="card-text">مشروع.التواصل الاجتماعي قيد التطويرمشروع ضخم ما زال قيد التطوير قاعدة بيانات ضخمة</p>
+                  <a href="https://github.com/tahakhatip" class="btn btn-outline-warning">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+    <!----------//--------=======CARD=========------------//----------->
+  </div>
+        </div>
+    </div>
+    
+    <div id="" class="container">
+        <div class="text-center m-5">
+            <h5>الخدمات</h5>
+            <P>نقدم لكم برمجة المواقع والتطبيقات وافضل الحلول البرمجية لتحويل افكاركم الى حقيقة  </P>
+            <hr style="border-top: 3px solid hsl(60, 98%, 51%);">
+          </div>
+        <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ggg.png" class="d-block w-100" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>تحليل البيانات</h5>
+                        <p>.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="mmm.png" class="d-block w-100" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>تطوير مواقع الويب</h5>
+                        <p>كافة اعمال هندسة البرمجيات.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ccc.png" class="d-block w-100" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>برمجة وتطوير المواقع</h5>
+                        <p>.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="container">  
+        <div class="text-center m-5">
+            <h5 id="Contact">اتصل بنا</h5>
+            <P>عنواننا الابتكار التميز الدقة  الالتزام  </P>
+            <hr style="border-top: 1px solid hsl(60, 98%, 51%);">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <h5 class="card-title"> للاستفسار والاقتراح</h5>
+                            <p class="card-text">لا تتردد في ارسال رسالة نسعد باقتراحاتكم   نفخر بكم ونطمح ان نقدم لكم الافضل .</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"> البريد الالكتروني</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted"> ارجو وضع البريد الالكتروني ليتم التواصل معك.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label>اتر ك رسالة</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-outline-warning">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="WhatsApp Image 2024-06-08 at 2.33.55 PM.jpeg" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-auto py-3 text-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>للمزيد من المعلومات لا تتردد بالاتصال نسعد باقتراحاتكم.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tahakhatip@gmail.com">Email: tahakhatip@gmail.com</a></li>
+                        <li><a href="https://wa.me/message/MGBIFY4M53PRP1">Phone: 0780838749</a></li>
+                        <li><a href="#">Address: 1111 jordan, City-amman</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.facebook.com/profile.php?id=61550973573689">Facebook</a></li>
+                        <li><a href="https://jo.linkedin.com/in/%D8%B7%D9%87-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8-b96050288?trk=profile-badge">linkedin</a></li>
+                        <li><a href="https://www.instagram.com/khatiptaha/?hl=ar">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 Your Compyright. TAHA-ALKHATIB.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

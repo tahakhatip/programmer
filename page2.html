@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkhatib Full Stack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .social {
+            margin-top: 3.5rem;
+        }
+
+        .social img {
+            margin-right: 2rem;
+            width: 2.5rem;
+            transition: 0.4s;
+        }
+
+        .social img:hover {
+            transform: scale(1.2);
+        }
+
+        h1 {
+            font-size: 4.65rem;
+            margin: 1.7rem;
+            animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 3.5rem;
+            animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            letter-spacing: 0.12rem;
+            animation: typing 8s steps(40, end), blink-caret .75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            height: 700px; /* تعيين الطول الثابت للصورة */
+            width: 100%; /* تأكد من أن العرض يأخذ المساحة بالكامل */
+            object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        }
+
+        .card {
+            border-top: 1px solid hsl(64, 93%, 49%);
+        }
+
+        .footer {
+            background-color: #72716c;
+            color: white;
+            padding: 40px 0;
+            border-top: 10px solid hsl(64, 93%, 49%);
+        }
+
+        .footer a {
+            color: #e7f70e;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ff0909;
+        }
+
+        body {
+            background-color: rgb(243, 235, 235);
+        }
+
+        /* أنماط الوضع المظلم */
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .footer a {
+            color: #f6f3fa;
+        }
+
+        .dark-mode .footer a:hover {
+            color: #fffb03;
+        }
+
+        .dark-mode .jumbotron,
+        .dark-mode .navbar,
+        .dark-mode .card {
+            background-color: #333;
+            color: #eef114;
+        }
+
+        .dark-mode .btn-warning:hover {
+            background-color: #ff79c6;
+            border-color: #ff79c6;
+        }
+
+        .dark-mode .navbar li a {
+            color: #f0ff19;
+        }
+
+        .dark-mode .list-group a {
+            background-color: #333;
+            color: #e7f70e;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Taha Alkhatib</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Link</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#frontend">Front End</a></li>
+                            <li><a class="dropdown-item" href="#backend">Back End</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#fullstack">Full Stack Developer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button id="toggle-dark-mode" class="btn btn-outline-warning">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="text-center m-5 section">
+        <div class="container m-1">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="jumbotron">
+                        <h1 class="display-4 text-dark bg-warning">Taha Alkhatib</h1>
+                        <p class="lead">Experienced web and app developer skilled in front-end and back-end technologies. I create dynamic, responsive websites and applications, focused on delivering innovative solutions and continuous improvement.</p>
+                        <hr style="border-top: 3px solid hsl(73, 100%, 54%);">
+                       
+                        <a href="https://tahakhatip.github.io/khatibcode/" class="btn btn-outline-warning">Download CV</a>
+                        <div class="social">
+                            <a href="https://jo.linkedin.com/in/%D8%B7%D9%87-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8-b96050288?trk=profile-badge"><img src="social_media_linkedin_icon_127334.ico" alt="LinkedIn"></a>
+                            <a href="https://www.instagram.com/khatiptaha/?hl=ar"><img src="instagram_108043.png" alt="Instagram"></a>
+                            <a href="https://github.com/tahakhatip"><img src="github_git_icon_145985.ico" alt="GitHub"></a>
+                        </div>
+                        <p>لا تنسى متابعتنا لتلقي احدث العروض.</p>
+                        <form class="d-flex my-2 my-lg-0" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group m-4">
+                        <a data-bs-toggle="collapse" href="#category" class="list-group-item bg-warning">Category</a>
+                        <div class="collapse show" id="category">
+                            <a href="#" class="list-group-item">برمجة مواقع الويب</a>
+                            <a href="#" class="list-group-item">برمجة التطبيقات</a>
+                            <a href="#" class="list-group-item">خدمات السوشال ميديا</a>
+                            <a href="#" class="list-group-item">جرافيك ديزاين</a>
+                            <a href="#" class="list-group-item">تصميم الفيديوهات انيميشن</a>
+                            <a href="#" class="list-group-item">خدمة SEO</a>
+                        </div>
+                        <a data-bs-toggle="collapse" href="#service" class="list-group-item bg-warning">Services</a>
+                        <div class="collapse show" id="service">
+                            <a href="#" class="list-group-item">تصميم موقع كامل</a>
+                            <a href="#" class="list-group-item">تطوير تطبيق موبايل</a>
+                            <a href="#" class="list-group-item">تحسين محركات البحث</a>
+                            <a href="#" class="list-group-item">خدمات الاستضافة</a>
+                            <a href="#" class="list-group-item">دعم فني وصيانة</a>
+                        </div>
+                        <a data-bs-toggle="collapse" href="#contact" class="list-group-item bg-warning">Contact</a>
+                        <div class="collapse show" id="contact">
+                            <a href="#" class="list-group-item">اتصل بنا</a>
+                            <a href="#" class="list-group-item">دعم العملاء</a>
+                            <a href="#" class="list-group-item">الأسئلة الشائعة</a>
+                            <a href="#" class="list-group-item">الشكاوى والملاحظات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="index.html" class="btn btn-outline-warning">العودة إلى الصفحة الرئيسية</a>
+    </div>
+
+    <div id="service" class="section">
+        <!-- محتوى قسم الخدمات -->
+              <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-5">خدماتنا</h1>
+
+        <!-- برمجة مواقع الويب -->
+        <section id="web-development" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">برمجة مواقع الويب</h2>
+                    <p class="card-text">نحن نقدم خدمات برمجة مواقع الويب باستخدام أحدث التقنيات لضمان أفضل أداء وتجربة للمستخدم. نحن نضمن تصميمًا متميزًا وتجربة مستخدم سلسة تتناسب مع احتياجاتك الخاصة.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>تصميم متجاوب يناسب جميع الأجهزة</li>
+                        <li>تكامل مع قواعد البيانات</li>
+                        <li>تحسين محركات البحث (SEO)</li>
+                        <li>إدارة المحتوى بسهولة</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- برمجة التطبيقات -->
+        <section id="app-development" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">برمجة التطبيقات</h2>
+                    <p class="card-text">نقوم بتطوير تطبيقات مخصصة لتلبية احتياجاتك الخاصة سواء كانت لنظام أندرويد أو iOS. فريقنا يمتلك خبرة واسعة في تطوير التطبيقات بمختلف أنواعها، من تطبيقات الأعمال إلى تطبيقات الألعاب.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>تطبيقات أصلية لنظامي iOS و Android</li>
+                        <li>تجربة مستخدم سلسة ومتميزة</li>
+                        <li>تكامل مع خدمات الطرف الثالث</li>
+                        <li>صيانة وتحديث مستمر</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- خدمات السوشال ميديا -->
+        <section id="social-media-services" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">خدمات السوشال ميديا</h2>
+                    <p class="card-text">نساعدك في إدارة حساباتك على وسائل التواصل الاجتماعي وتقديم محتوى يجذب المتابعين. فريقنا يمكنه إنشاء استراتيجيات محتوى فعالة وزيادة التفاعل مع جمهورك.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>إدارة الحسابات على منصات التواصل الاجتماعي</li>
+                        <li>إنشاء محتوى جذاب ومؤثر</li>
+                        <li>تحليل الأداء وتقديم تقارير دورية</li>
+                        <li>استراتيجيات زيادة المتابعين والتفاعل</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- جرافيك ديزاين -->
+        <section id="graphic-design" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">جرافيك ديزاين</h2>
+                    <p class="card-text">نقدم خدمات تصميم الجرافيك الاحترافية لإنشاء شعارات وبوسترات تعكس هوية شركتك. نحن نعمل معك لتحقيق رؤيتك الإبداعية وتقديم تصميمات تترك انطباعًا دائمًا.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>تصميم الشعارات والهوية البصرية</li>
+                        <li>تصميم بوسترات وإعلانات</li>
+                        <li>تصميم مواد تسويقية</li>
+                        <li>تصميم واجهات المستخدم</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- تصميم الفيديوهات انيميشن -->
+        <section id="animation-videos" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">تصميم الفيديوهات انيميشن</h2>
+                    <p class="card-text">نقوم بإنتاج فيديوهات انيميشن جذابة تساهم في تعزيز تواجدك على الإنترنت. يمكننا إنشاء فيديوهات تعليمية، ترويجية، وتسويقية بجودة عالية.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>تصميم فيديوهات ترويجية</li>
+                        <li>فيديوهات تعليمية</li>
+                        <li>موشن جرافيك</li>
+                        <li>تحرير وإنتاج الفيديو</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- دعم فني وصيانة -->
+        <section id="technical-support" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">دعم فني وصيانة</h2>
+                    <p class="card-text">نقدم خدمات الدعم الفني والصيانة لضمان استمرارية عمل مواقعك وتطبيقاتك بدون أي مشاكل. فريقنا متواجد لحل أي مشاكل تقنية تواجهك بسرعة وكفاءة.</p>
+                    <p class="card-text">التفاصيل:</p>
+                    <ul>
+                        <li>دعم فني على مدار الساعة</li>
+                        <li>صيانة دورية</li>
+                        <li>حل المشاكل التقنية بسرعة</li>
+                        <li>تحديثات وتحسينات مستمرة</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="text-center">
+        <a href="index.html" class="btn btn-outline-warning">العودة إلى الصفحة الرئيسية</a>
+    </div>
+    <div id="project" class="section">
+        <!-- محتوى قسم المشاريع -->
+    </div>
+
+    <div id="contact" class="section">
+        <!-- محتوى قسم الاتصال -->
+    </div>
+
+    <div id="about" class="section">
+        <!-- محتوى قسم عن الموقع -->
+    </div>
+
+    <div id="frontend" class="section">
+        <!-- محتوى قسم Front End -->
+    </div>
+
+    <div id="backend" class="section">
+        <!-- محتوى قسم Back End -->
+    </div>
+
+    <div id="fullstack" class="section">
+        <!-- محتوى قسم Full Stack Developer -->
+
+        <footer class="footer mt-auto py-3 text-warning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>للمزيد من المعلومات لا تتردد بالاتصال نسعد باقتراحاتكم.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="tahakhatip@gmail.com">Email: tahakhatip@gmail.com</a></li>
+                            <li><a href="https://wa.me/message/MGBIFY4M53PRP1">Phone: 0780838749</a></li>
+                            <li><a href="#">Address: 1111 jordan, City-amman</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://web.facebook.com/profile.php?id=61550973573689">Facebook</a></li>
+                            <li><a href="https://jo.linkedin.com/in/%D8%B7%D9%87-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8-b96050288?trk=profile-badge">linkedin</a></li>
+                            <li><a href="https://www.instagram.com/khatiptaha/?hl=ar">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2023 Your Compyright. TAHA-ALKHATIB.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>
